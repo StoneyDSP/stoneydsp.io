@@ -1,0 +1,24 @@
+{
+  "name": "stoneydsp.io",
+  "version": "1.0.0",
+  "description": "StoneyDSP Official Website",
+  "repository": "https://github.com/StoneyDSP/stoneydsp.io.git",
+  "main": "index.html",
+  "author": "StoneyDSP <nathanjhood@googlemail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@1.22.19",
+  "private": true,
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.16.0",
+    "@html-eslint/parser": "^0.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "cypress": "^12.5.1",
+    "eslint": "^8.33.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5",
+    "vercel": "^28.15.3"
+  }
+}
