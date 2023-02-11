@@ -1,0 +1,7 @@
+<script lang="ts">
+  async function addLayout() {
+    const resp = await fetch("../src/layouts/default.html");
+    const html = await resp.text();
+    document.body.insertAdjacentHTML("beforeend", html);
+  }
+</script>

@@ -1,0 +1,37 @@
+<template>
+  <button
+    v-show="!contentVisible"
+    @click="contentTrue"
+  >
+    <AppIconEnter />
+  </button>
+  <button
+    v-show="contentVisible"
+    @click="contentFalse"
+  >
+    <AppIconExit />
+    <slot />
+  </button>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      contentVisible: false
+    }),
+    methods: {
+      contentTrue () {
+        this.contentVisible = true
+      },
+      contentFalse () {
+        this.contentVisible = false
+      }
+    }
+  }
+</script>
+
+<style scoped>
+  button {
+    padding: 1rem;
+  }
+</style>
