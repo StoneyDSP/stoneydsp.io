@@ -1,0 +1,136 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+  ],
+
+  "launch": {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Serve",
+        "request": "launch",
+        "runtimeArgs": [
+          "serve"
+        ],
+        "runtimeExecutable": "npx",
+        "skipFiles": [
+          "<node_internals>/**",
+          "**/node_modules/**",
+          "**/.development/**"
+        ],
+        "type": "node",
+        "program": "${workspaceFolder}"
+      },
+
+      {
+        "name": "Destroy",
+        "request": "launch",
+        "runtimeExecutable": "rm",
+        "runtimeArgs": ["-rvf"],
+        "type": "node",
+        "cwd": "${workspaceFolder}",
+        "program": "${cwd}/src/main/main.js"
+      },
+
+      {
+        "type": "node-terminal",
+        "name": "Clean",
+        "request": "launch",
+        "command": "yarn clean",
+        "cwd": "${workspaceFolder}",
+        "nodeVersionHint": 19
+      },
+
+      {
+        "type": "node-terminal",
+        "name": "Wipe",
+        "request": "launch",
+        "command": "yarn wipe",
+        "cwd": "${workspaceFolder}",
+        "nodeVersionHint": 19
+      },
+
+      {
+        "type": "node-terminal",
+        "name": "Build",
+        "request": "launch",
+        "command": "yarn build",
+        "cwd": "${workspaceFolder}",
+        "nodeVersionHint": 19
+      },
+
+      {
+        "type": "node-terminal",
+        "name": "Rebuild",
+        "request": "launch",
+        "command": "yarn rebuild",
+        "cwd": "${workspaceFolder}",
+        "nodeVersionHint": 19
+      },
+    ]
+  },
+
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "My Task",
+        "command": "echo hello",
+        "type": "shell",
+        "args": [],
+        "problemMatcher": [
+          "$tsc"
+        ],
+        "presentation": {
+          "reveal": "always"
+        },
+        "group": "build"
+      }
+    ]
+  },
+
+  "settings": {
+
+    "files.associations": {},
+    "files.enableTrash": true,
+
+    "css.format.enable": true,
+
+    "html.format.enable": true,
+
+    "nuxt.isNuxtApp": false,
+    "npm.autoDetect": "on",
+
+    "vueDocs.lang": "en",
+    "vueDocs.links": {
+      "Vuetify": "https://vuetifyjs.com/getting-started/quick-start"
+    },
+
+    "typescript.suggest.paths": true,
+    "typescript.suggest.enabled": true,
+
+    "git.autorefresh": false,
+    "git.mergeEditor": true,
+
+    "github.gitProtocol": "ssh",
+
+    "markdown.math.enabled": true,
+
+    "json.format.enable": true,
+    "json.schemaDownload.enable": true,
+    "json.validate.enable": true,
+
+    "typescript.check.npmIsInstalled": true,
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "typescript.format.enable": true,
+    "typescript.locale": "en",
+    "typescript.tsc.autoDetect": "on",
+    "typescript.validate.enable": true,
+    "typescript.tsdk": "~/.config/yarn/global/node_modules/typescript/lib"
+  }
+}
