@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Recommended",
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "es6",
+    // "module": "commonjs",
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
@@ -14,9 +14,10 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "baseUrl": ".",
     "types": [
+      "cypress",
       "node"
     ],
     "paths": {
@@ -37,10 +38,10 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
+    "src/**/**/*.ts",
+    "src/**/**/*.tsx",
     "tests/**/*.ts",
-    "tests/**/*.tsx",
-    "public/index.html",
-    "public/logo.ts"
+    "tests/**/*.tsx"
   ],
   "exclude": [
     "node_modules",
@@ -48,6 +49,6 @@
     "**/*.ts.dev",
     "**/*.spec.ts"
   ],
-  "outFile": "../../built/local/tsc.js",
-  "outDir": "public/js/"
+  "outFile": "../../public/tsc.js",
+  "outDir": "./out/"
 }
