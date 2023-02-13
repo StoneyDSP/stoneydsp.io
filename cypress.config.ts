@@ -1,20 +1,35 @@
 import { defineConfig } from "cypress";
 
 export default defineConfig({
+
   e2e: {
     baseUrl: 'http://localhost:3000',
     setupNodeEvents(on, config) {
       // e2e testing node events setup code
+      return Object.assign({}, config, {
+        fixturesFolder: 'tests/e2e/fixtures',
+        // integrationFolder: 'tests/e2e/specs',
+        screenshotsFolder: 'tests/e2e/screenshots',
+        videosFolder: 'tests/e2e/videos',
+        supportFile: 'tests/e2e/support/index.js'
+      })
     },
+    fixturesFolder: 'tests/e2e/fixtures',
+    screenshotsFolder: 'tests/e2e/screenshots',
+    videosFolder: 'tests/e2e/videos',
+    supportFile: 'tests/e2e/support/index.js'
   },
 
   component: {
     devServer: {
       framework: "vue",
-      bundler: "vite",
+      bundler: "vite"
     },
     setupNodeEvents(on, config) {
       // component testing node events setup code
+      return Object.assign({}, config, {
+      })
     },
-  },
+  }
+
 });

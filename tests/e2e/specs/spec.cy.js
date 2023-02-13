@@ -1,7 +1,8 @@
 "use strict";
-describe('Visit website', function () {
-    it('successfully loads', function () {
-        cy.visit('http://localhost:3000');
+describe('Visit website', () => {
+    it('successfully loads', () => {
+        cy.visit('http://localhost:3000'),
+            cy.visit('http://localhost:3000/public'),
+            cy.contains('StoneyDSP');
     });
 });
-//# sourceMappingURL=spec.cy.js.map

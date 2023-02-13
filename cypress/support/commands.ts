@@ -1,4 +1,4 @@
-<reference types="cypress" />
+///<reference types="cypress" />
 
 // ***********************************************
 // This example commands.ts shows you how to
@@ -12,9 +12,9 @@
 
 
 // -- This is a parent command --
-Cypress.Commands.add('login', (email, password) => { ... })
+// Cypress.Commands.add('login', (email, password) => { ... })
 
-//
+
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
 
