@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "typescript": "^4.9.5",
-    "vercel": "^28.15.3"
+    "vercel": "^28.16.12"
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.16.0",
