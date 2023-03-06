@@ -37,7 +37,7 @@
     "vercel": "^28.15.3"
   },
   "devDependencies": {
-    "@html-eslint/eslint-plugin": "^0.16.0",
+    "@html-eslint/eslint-plugin": "^0.17.1",
     "@html-eslint/parser": "^0.16.0",
     "@testing-library/cypress": "^9.0.0",
     "@tsconfig/cypress": "^1.0.1",
