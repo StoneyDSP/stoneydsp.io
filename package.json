@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.16.0",
-    "@html-eslint/parser": "^0.16.0",
+    "@html-eslint/parser": "^0.17.1",
     "@testing-library/cypress": "^9.0.0",
     "@tsconfig/cypress": "^1.0.1",
     "@tsconfig/recommended": "^1.0.2",
